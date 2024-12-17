@@ -26,27 +26,6 @@ class FCM():
     #cập nhật lại ma trận thành viên U
     def cap_nhat_U(self,data):
 
-        # n=data.shape[0]
-        # U=np.zeros((n,self.c))
-        # D=np.zeros((n,self.c))
-
-        # #tính khoảng cách euclid từ x[i] - v[k]
-        # for i in range(n):
-        #     for k in range(self.c):
-        #         D[i,k]=np.linalg.norm(data[i]-self.tamcum[k])
-
-        # #cập nhận lại ma trận thành viên
-        # for i in range(n):
-        #     for k in range(self.c):
-        #         mso=0
-        #         for j in range(self.c):
-        #             mso+=(D[i,k]/D[i,j])**(2/(self.m-1))
-        #         U[i,k]=1.0/mso
-        
-        # return U
-        
-        # U=np.zeros((n,self.c))
-
         D=[]
         for j in range(self.c):
             #tính khoảng cách từng điểm dữ liệu đến tâm cụm thứ j
@@ -82,7 +61,7 @@ class FCM():
 
 if __name__=="__main__":
 
-    df=pd.read_csv('C:\\Users\\ADMIN\\Downloads\\Real estate.csv')
+    df=pd.read_csv('Real estate.csv')
     data=df.values
     
     dulieu=FCM(c=3,m=2,max_iter=1000,epsilon=1e-5)

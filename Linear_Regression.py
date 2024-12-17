@@ -26,7 +26,7 @@ def xulydulieu(df):
     return X,y    
 
 if __name__=="__main__":
-    df=pd.read_csv('C:\\Users\\ADMIN\\Downloads\\Real estate.csv')
+    df=pd.read_csv('Real estate.csv')
     
     X,y=xulydulieu(df)
 
