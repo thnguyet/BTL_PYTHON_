@@ -13,20 +13,18 @@ Hàm mục tiêu của FCM được sử dụng để tối ưu hóa mức độ
 ## Điều kiện:
 - Ma trận mức độ thành viên \(u_{ik}\) phải thỏa mãn điều kiện:
   ![Screenshot 2024-12-17 212804](https://github.com/user-attachments/assets/e9b57a91-acb9-4e2b-85ae-a8f814598333)
-)
+
 
 ---
 
 ## Thuật toán FCM:
 1. **Khởi tạo** ma trận thành viên với kích thước \(N \times C\) (với \(N\) là số điểm dữ liệu và \(C\) là số cụm).
 2. **Tính tâm cụm**:
-   \[
-   v_k = \frac{\sum_{i=1}^N u_{ik}^m \cdot x_i}{\sum_{i=1}^N u_{ik}^m}
-   \]
+   ![Screenshot 2024-12-17 213907](https://github.com/user-attachments/assets/b9f544b1-1605-45b4-a939-d29a2c74e5a6)
+
 3. **Cập nhật lại ma trận thành viên**:
-   \[
-   u_{ik} = \frac{1}{\sum_{j=1}^c \left( \frac{\|x_i - v_k\|}{\|x_i - v_j\|} \right)^{\frac{2}{m-1}}}
-   \]
+   ![Screenshot 2024-12-17 214943](https://github.com/user-attachments/assets/65886350-8c06-4749-b0a3-1aae422ea043)
+
 4. **Lặp lại** bước 2 và 3 cho đến khi hội tụ (chênh lệch giữa các lần lặp nhỏ hơn một ngưỡng).
 5. **Gán nhãn** dựa trên mức độ thành viên lớn nhất.
 
