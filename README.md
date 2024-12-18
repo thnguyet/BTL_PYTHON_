@@ -18,7 +18,7 @@ Hàm mục tiêu của FCM được sử dụng để tối ưu hóa mức độ
 ---
 
 ## Thuật toán FCM:
-1. **Khởi tạo** ma trận thành viên với kích thước \(N \times C\) (với \(N\) là số điểm dữ liệu và \(C\) là số cụm).
+1. **Khởi tạo** ma trận thành viên với kích thước NxC (với \(N\) là số điểm dữ liệu và \(C\) là số cụm).
 2. **Tính tâm cụm**:
    ![Screenshot 2024-12-17 213907](https://github.com/user-attachments/assets/b9f544b1-1605-45b4-a939-d29a2c74e5a6)
 
