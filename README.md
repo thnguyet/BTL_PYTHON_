@@ -12,9 +12,8 @@ Hàm mục tiêu của FCM được sử dụng để tối ưu hóa mức độ
 
 ## Điều kiện:
 - Ma trận mức độ thành viên \(u_{ik}\) phải thỏa mãn điều kiện:
-  \[
-  \sum_{k=1}^c u_{ik} = 1 \quad \forall i
-  \]
+  ![Screenshot 2024-12-17 212804](https://github.com/user-attachments/assets/e9b57a91-acb9-4e2b-85ae-a8f814598333)
+)
 
 ---
 
