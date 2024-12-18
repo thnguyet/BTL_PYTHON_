@@ -92,5 +92,5 @@ Trong đó:
 ---
 
 ### **4. Mục tiêu:**  
-Tìm giá trị vector trọng số \(\f{w}\) sao cho hàm mất mát nhỏ nhất:
+Tìm giá trị vector trọng số w sao cho hàm mất mát nhỏ nhất:
 
